@@ -70,7 +70,7 @@ pygmentsCodeFences=true
 [[menu.main]]
   identifier = "film"
   name = "Film to Watch"
-  title = "Film section"
+  title = "Film"
   url = "/film/"
   weight = -130
 
