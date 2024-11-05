@@ -5,7 +5,7 @@
     pip install jupyterlite &&
     
     # Install additional dependencies for R kernel (if not bundled in the JupyterLite package)
-    pip install jupyterlite-kernel-r &&
+#    pip install jupyterlite-kernel-r &&
     
     # Build the Hugo site
     hugo --minify --gc &&
