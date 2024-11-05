@@ -68,6 +68,13 @@ pygmentsCodeFences=true
 
 
 [[menu.main]]
+  identifier = "jupyterlite"
+  name = "jupyter lite"
+  title = "jupyter lite"
+  url = "/live"
+  weight = -140
+
+[[menu.main]]
   identifier = "film"
   name = "Film"
   title = "Film"
