@@ -3,6 +3,7 @@
   command = """
    pip install jupyterlite &&
    hugo --minify --gc &&
+   jupyter lite add --kernel r &&
    jupyter lite build --output-dir public/live
   """
 
