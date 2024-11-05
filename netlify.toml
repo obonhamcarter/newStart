@@ -1,10 +1,20 @@
 [build]
   publish = "public"
   command = """
-   pip install jupyterlite &&
-   hugo --minify --gc &&
-   jupyter lite add --kernel r &&
-   jupyter lite build --output-dir public/live
+    # Install JupyterLite and dependencies
+    pip install jupyterlite &&
+    
+    # Install additional dependencies for R kernel (if not bundled in the JupyterLite package)
+    pip install jupyterlite-kernel-r &&
+    
+    # Build the Hugo site
+    hugo --minify --gc &&
+    
+    # Add the R kernel to the JupyterLite environment
+    jupyter lite add --kernel r &&
+    
+    # Build the JupyterLite environment
+    jupyter lite build --output-dir public/live
   """
 
 [build.environment]
@@ -14,9 +24,8 @@
 
 [[headers]]
   for = "/*" # This defines which paths this specific [[headers]] block will cover.
-
-[headers.values]
-  X-Frame-Options = "DENY"
-  X-XSS-Protection = "1; mode=block"
-  Referrer-Policy = "same-origin"
-  Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "same-origin"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
