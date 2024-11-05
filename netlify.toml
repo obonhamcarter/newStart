@@ -11,7 +11,7 @@
     hugo --minify --gc &&
     
     # Add the R kernel to the JupyterLite environment
-    jupyter lite add --kernel r &&
+#    jupyter lite add --kernel r &&
     
     # Build the JupyterLite environment
     jupyter lite build --output-dir public/live
