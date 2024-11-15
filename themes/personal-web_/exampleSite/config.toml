@@ -1,8 +1,8 @@
 baseURL = "https://example.com/"
 languageCode = "en-us"
-title = "Oliver Bonham-Carter's Test Site"
-theme = "personal-web_"
-copyright="© OLiver Bonham-Carter"
+title = "Edna West"
+theme = "personal-web"
+copyright="© Edna West"
 googleAnalytics = ""
 enableEmoji=true
 enableRobotsTXT=true
@@ -10,8 +10,8 @@ pygmentsUseClasses=true
 pygmentsCodeFences=true
 
 [params.intro]
-  main = "The New Start Web site for testing :experiment:"
-  sub = "Welcome to my testing site!!"
+  main = "Hi, I'm Edna :wave:"
+  sub = "I'm a Web Developer and Entrepreneur"
 
 [params.main]
   latestPublishHeader = "My Latest Project"
@@ -27,6 +27,7 @@ pygmentsCodeFences=true
   breadcrumb = true
   accentColor = "#FD3519"
   mainSections = ['portfolio'] # values: ['post', 'portfolio'] only accept one section, to be displayed bellow 404
+  rendererSafe = false # set to true if wish to remove the unsafe renderer setting below (recommended). Titles will not be run through markdownify
 
 [params.notFound]
   gopher = "/images/gopher.png" # checkout https://gopherize.me/
@@ -49,15 +50,15 @@ pygmentsCodeFences=true
 
 [params.social]
   github = "https://github.com/"
-#  twitter = "https://twitter.com/"
-#  linkedin = "https://www.linkedin.com/in/"
-#  medium = "https://medium.com/"
-#  codepen = "https://codepen.io/"
-#  facebook = "https://www.facebook.com/"
-#  youtube = "https://www.youtube.com/"
-#  instagram = "https://www.instagram.com/"
-#  gitlab = "https://gitlab.com/"
-#  keybase = "https://keybase.io/"
+  twitter = "https://twitter.com/"
+  linkedin = "https://www.linkedin.com/in/"
+  medium = "https://medium.com/"
+  codepen = "https://codepen.io/"
+  facebook = "https://www.facebook.com/"
+  youtube = "https://www.youtube.com/"
+  instagram = "https://www.instagram.com/"
+  gitlab = "https://gitlab.com/"
+  keybase = "https://keybase.io/"
 
 [params.contact]
   email = ""
@@ -65,21 +66,6 @@ pygmentsCodeFences=true
 
 
 [menu]
-
-
-[[menu.main]]
-  identifier = "jupyterlite"
-  name = "jupyter lite"
-  title = "jupyter lite"
-  url = "/live"
-  weight = -140
-
-[[menu.main]]
-  identifier = "film"
-  name = "Film"
-  title = "Film"
-  url = "/film/"
-  weight = -130
 
 [[menu.main]]
   identifier = "about"
