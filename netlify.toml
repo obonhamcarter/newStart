@@ -3,16 +3,14 @@
   command = """
     # Install JupyterLite and dependencies
     pip install jupyterlite &&
-    
-    # Install additional dependencies for R kernel (if not bundled in the JupyterLite package)
-#    pip install jupyterlite-kernel-r && # not working
-#     pip install jupyterlab-kernel-r && # not working
-
     # Build the Hugo site
     hugo --minify --gc &&
-    
-    # Add the R kernel to the JupyterLite environment
-#    jupyter lite add --kernel r &&
+
+    # ref fror below code: https://github.com/r-wasm/jupyterlite-webr-kernel
+    git clone https://github.com/r-wasm/jupyterlite-webr-kernel
+    cd jupyterlite-webr-kernel
+    pip install .
+    cd ..
     
     # Build the JupyterLite environment
     jupyter lite build --output-dir public/live
